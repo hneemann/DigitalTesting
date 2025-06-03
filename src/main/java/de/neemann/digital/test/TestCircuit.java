@@ -17,7 +17,7 @@ public class TestCircuit {
         File hexFile = new File(args[1]);
         File outFile = new File(args[2]);
 
-        DataField program = Importer.read(hexFile, 16);
+        DataField program = Importer.read(hexFile, 16, false);
 
         // run the program
         RAMInterface ram = new UnitTester(circuit)      // load processor
